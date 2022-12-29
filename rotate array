@@ -1,0 +1,13 @@
+
+  
+Brute force approach
+    for (let i = 0; i < k; i++) {
+  let lastElement = nums.pop();
+  nums.unshift(lastElement);
+}
+return nums;
+
+Optimized Approach
+let nums=[1,2,3,4,5,6,7];
+k=3;
+return nums.push(...nums.splice(0,nums.length-k%nums.length));
