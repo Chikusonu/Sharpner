@@ -1,5 +1,6 @@
 
   let nums=[1,2,3,4,5,6,7];
+  k=3;
 //Brute force approach
     for (let i = 0; i < k; i++) {
   let lastElement = nums.pop();
@@ -9,5 +10,5 @@ console.log(nums);
 
 //Optimized Approach
 
-k=3;
+
 console.log(nums.push(...nums.splice(0,nums.length-k%nums.length)));
